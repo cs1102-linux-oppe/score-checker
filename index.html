@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Oppe Score Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Linux Oppe Score Checker</h1>
+        <div class="input-section">
+            <label for="rollNo">Enter Your Roll Number:</label>
+            <input type="text" id="rollNo" placeholder="e.g., 24F2100335">
+            <button onclick="checkScore()">Submit</button>
+        </div>
+        <div id="result" class="result-section" style="display: none;">
+            <h2>Score Details</h2>
+            <table>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Course Code</th>
+                    <th>Score</th>
+                    <th>QP</th>
+                </tr>
+                <tr>
+                    <td id="displayRollNo"></td>
+                    <td>CS1102</td>
+                    <td id="displayScore"></td>
+                    <td><button onclick="openQP()">QP</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
